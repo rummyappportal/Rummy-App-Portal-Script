@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-Key Rummy App Portal Script - Launch Your Gaming Business Today!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+            border-radius: 20px;
+            color: white;
+            padding: 50px 30px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #6366F1;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-whatsapp i {
+            font-size: 1.2rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Features */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: calc(33.333% - 20px);
+            min-width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #EEF2FF;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon i {
+            font-size: 28px;
+            color: #6366F1;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Benefits */
+        .benefits-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .benefit-item {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            width: calc(25% - 20px);
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .benefit-item i {
+            font-size: 2.5rem;
+            color: #6366F1;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .benefit-item p {
+            color: #666;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .pricing h2 {
+            color: #6366F1;
+            margin-bottom: 20px;
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .price-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .price-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .price-card .price {
+            font-size: 2.5rem;
+            color: #6366F1;
+            margin-bottom: 20px;
+        }
+
+        .price-card ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        .price-card ul li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .price-card .btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            margin-bottom: 60px;
+        }
+
+        .screenshot-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+        }
+
+        .screenshot-item {
+            min-width: 280px;
+            height: 500px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            scroll-snap-align: start;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            margin-bottom: 60px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: calc(50% - 15px);
+            min-width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-content {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-content:before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 60px;
+            color: #6366F1;
+            font-family: Georgia, serif;
+            opacity: 0.3;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-info h4 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .testimonial-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            margin-bottom: 60px;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .faq-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .faq-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Mobile Responsiveness - Updated for better mobile experience */
+        @media (max-width: 768px) {
+            /* Hero Section Adjustments */
+            .hero {
+                padding: 30px 20px;
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-image {
+                min-width: 100%;
+            }
+            
+            /* Button Adjustments */
+            .btn {
+                margin: 5px;
+                padding: 10px 20px;
+                width: 100%;
+                max-width: 250px;
+                display: inline-block;
+            }
+            
+            .btn-secondary {
+                margin-top: 10px;
+                margin-left: 0;
+            }
+            
+            /* Section Titles */
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title p {
+                font-size: 1rem;
+            }
+            
+            /* Features Section */
+            .features {
+                gap: 15px;
+            }
+            
+            .feature-card {
+                width: 100%;
+                min-width: 100%;
+                margin-bottom: 15px;
+                padding: 20px;
+            }
+            
+            /* Benefits Section */
+            .benefits-container {
+                flex-direction: column;
+            }
+            
+            .benefit-item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+/* Pricing Section */
+            .price-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .price-card {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+            
+            /* Screenshots Section */
+            .screenshot-container {
+                padding: 10px 0;
+            }
+            
+            .screenshot-item {
+                min-width: 250px;
+                height: 450px;
+            }
+            
+            /* Testimonials Section */
+            .testimonial-container {
+                flex-direction: column;
+            }
+            
+            .testimonial-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            /* FAQ Section */
+            .faq-item {
+                padding: 20px 15px;
+            }
+            
+            .faq-item h3 {
+                font-size: 1.1rem;
+            }
+            
+            /* Container padding adjustment */
+            .container {
+                padding: 15px;
+            }
+            
+            /* Call to Action section */
+            .cta {
+                text-align: center;
+                padding: 30px 15px;
+            }
+            
+            .cta h2 {
+                font-size: 1.6rem;
+            }
+            
+            .cta .btn {
+                margin: 10px auto;
+                display: block;
+            }
+        }
+
+        /* Additional styles for extra small devices */
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 100%;
+                margin: 10px 0;
+            }
+            
+            .screenshot-item {
+                min-width: 220px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Turn-Key Rummy App Portal Script</h1>
+                <p>Launch your own profitable online rummy gaming business in just 24 hours! Our premium, ready-to-deploy script comes with everything you need to start earning immediately.</p>
+               
+                <a href="#pricing" class="btn btn-secondary">See Features</a>
+                <a href="https://wa.me/+918350883080" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Buy on WhatsApp
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="https://mycarenumbers.com/images/header.webp" alt="Rummy App Showcase">
+            </div>
+        </section>
+        
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <div class="section-title">
+                <h2>Why Choose Our Rummy Script?</h2>
+                <p>Start your profitable online gaming business with minimal investment</p>
+            </div>
+            
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Quick Launch</h3>
+                    <p>Get your gaming platform up and running within 24 hours with our ready-to-deploy solution.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>High ROI</h3>
+                    <p>Earn back your investment quickly with multiple monetization channels built into the platform.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Zero Coding</h3>
+                    <p>No technical skills required - our script is plug-and-play with easy configuration options.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Full Support</h3>
+                    <p>Receive dedicated technical support and business guidance for 12 months.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-title">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to run a successful rummy gaming platform</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Admin Dashboard</h3>
+                    <p>Comprehensive control panel to manage users, games, and analytics from one place.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                         <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Complete SEO dashboard equipped </h3>
+                    <p>powerful SEO boost feature, all accessible in a single panel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Separate category</h3>
+                    <p>Create a separate category for each section of the app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reports</h3>
+                    <p>Detailed insights into your business performance, user behavior, and revenue streams.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Notification System</h3>
+                    <p>Engage users with custom notifications about bonuses, new games, and special offers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Easy Customization</h3>
+                    <p>Personalize your platform with your brand colors, logo, and custom content without coding.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots">
+            <div class="section-title">
+                <h2>See It In Action</h2>
+                <p>Preview how your rummy app portal will look and function</p>
+            </div>
+            <div class="screenshot-container">
+                <div class="screenshot-item">
+                    <img src="https://mycarenumbers.com/images/2.webp" alt="App Dashboard">
+                </div>
+                <div class="screenshot-item">
+                    <img src="https://mycarenumbers.com/images/3.webp" alt="Game Interface">
+                </div>
+                <div class="screenshot-item">
+                    <img src="https://mycarenumbers.com/images/4.webp" alt="Admin Panel">
+                </div>
+                <div class="screenshot-item">
+                    <img src="https://mycarenumbers.com/images/5.webp" alt="Payment Gateway">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>Client Success Stories</h2>
+                <p>Hear what our satisfied customers have to say</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The rummy portal script exceeded my expectations. Setup was quick, and I started seeing returns within the first week. The support team was incredibly helpful with customization.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I was skeptical at first, but after seeing how easy it was to set up and manage, I'm completely satisfied. My gaming business is now generating consistent revenue every month.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Priya Sharma">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="section-title">
+                <h2>What we are offering</h2>
+                <p>Choose the perfect package for your gaming business</p>
+            </div>
+            <div class="price-container">
+                <div class="price-card">
+                    <h3>Standard Package</h3>
+                    <ul>
+                        <li>Rummy App Portal Script</li>
+                        <li>Basic Admin Dashboard</li>
+                    
+                    </ul>
+                    <a href="https://wa.me/+918350883080?text=I'm%20interested%20in%20the%20Standard%20Package" target="_blank" class="btn">Buy Now</a>
+                </div>
+                <div class="price-card">
+                    <h3>Premium Package</h3>
+                  
+                    <ul>
+                        <li>Complete Rummy App Solution</li>
+                        <li>Advanced Admin Dashboard</li>
+                        <li>We will create a complete website for you.</li>
+                        <li>Custom Branding</li>
+                        <li>complete seo of your website </li>
+                    </ul>
+                    <a href="https://wa.me/+918350883080?text=I'm%20interested%20in%20the%20Premium%20Package" target="_blank" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Got questions? We've got answers!</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How quickly can I launch my rummy gaming platform?</h3>
+                    <p>With our turn-key solution, you can launch your platform within 24 hours. The script comes pre-configured and ready to deploy, requiring minimal technical expertise.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need coding skills to use this script?</h3>
+                    <p>No coding skills are required. Our script is designed to be plug-and-play with an intuitive admin dashboard that allows easy customization without writing any code.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What kind of technical support is provided?</h3>
+                    <p>We offer comprehensive technical support for 3-12 months depending on the package you choose. Our support includes installation assistance, troubleshooting, and guidance on platform optimization.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I customize the app to match my brand?</h3>
+                    <p>Absolutely! Our premium package includes full customization options. You can change colors, logos, add your branding, and customize the user interface to match your brand identity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to Launch Your Rummy Gaming Business?</h2>
+            <p>Don't miss this opportunity to enter the lucrative online gaming market. Our turn-key solution makes it easier than ever to start your own profitable rummy platform.</p>
+            <a href="#pricing" class="btn">Get Started Now</a>
+    </div>
+</body>
+</html>
