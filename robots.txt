@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rummyappportal.github.io/Rummy-App-Portal-Script/sitemap.xml
